@@ -33,5 +33,9 @@ confirm-body =
         [lock-screen] lock the screen
         [log-out] log out
         *[other] apply the selected action
-    } automatically in { $countdown } seconds.
+    } automatically { $countdown ->
+        [0] now.
+        [1] in 1 second.
+        *[other] in {$countdown} seconds.
+    }
 
